@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">MyCommon</string>
+
+    <!--menu-->
+    <string name="news">AndroidFire新闻</string>
+    <string name="zhihu">知乎</string>
+    <string name="photo">图片</string>
+    <string name="video">视频</string>
+    <string name="tools">设置</string>
+    <string name="no_photo_mode">无图模式</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="about">关于</string>
+
+    <string name="photo_collections">图集：%1$s</string>
+    <string name="notice_more">更多</string>
+    <string name="buy_now">立即抢购</string>
+    <string name="buy_only">仅限购买一次</string>
+    <string name="history_record">查看更多历史项目</string>
+    <string name="foot_des">投资有风险  理理财需谨慎</string>
+    <string name="registandlogin">注册/登录</string>
+    <string name="open_up">立即开通</string>
+    <string name="recharge">充值</string>
+    <string name="crash">提现</string>
+    <string name="user_login">用户登录</string>
+    <string name="login">登录</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="regist_crash_gift">注册送168礼包</string>
+    <string name="user_register">用户注册</string>
+    <string name="input_phonenumber">请输入手机号码</string>
+    <string name="input_phone_cetify">请输入手机验证码</string>
+    <string name="register_password">请设置登录密码</string>
+    <string name="register_password_again">请确认登录密码</string>
+    <string name="registnow">立即注册</string>
+    <string name="invest_warning">理财有风险  投资需谨慎</string>
+    <string name="confirm">确定</string>
+    <string name="balance">余额</string>
+    <string name="recharge_notice">
+        "温馨提示：
+1、为了您的资金安全，请您在充值前完成实名认证及支付密码设置；
+2、为遵守国家反洗钱和套现行为的相关法律规定，充值以后的资金您必须经全额投标、回款后才可以申请提现；
+3、充值期间，请勿关闭页面，待充值成功并返回首页后，所充资金才能入账，如有一问请联系客服；
+4、充值过程遇到问题，请联系客服，4008-976-555"
+    </string>
+    <string name="change_paypassword_des">此支付密码为湖湘贷平台支付密码，与第三方资管平台支付密码不同。</string>
+    <string name="change_phone_number_des">如果您的常用手机号码已更换，请点击下方确认按钮，进入第三方富友支付平台修改。</string>
+    <string name="new_invest_des">使用要求：体验金只能适用于湖湘贷平台产品投资中，不能提现或脱于平台使用于其他用途</string>
+    <string name="bang_bank_card_des">  湖湘贷平台与联动优势第三方支付合作，将由联动优势向您的手机发送支付密码，湖湘贷平台保证不接触您的资金，保障资金使用安全。</string>
+</resources>

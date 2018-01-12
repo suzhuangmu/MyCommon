@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/title_view"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_48"
+                android:paddingRight="@dimen/dp_48"
+                android:paddingTop="@dimen/dp_30">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_sp_15"
+                        android:textColor="@color/font_color_99"
+                        android:text="持卡人："/>
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_sp_15"
+                        android:textColor="@color/font_color_99"
+                        android:text="张三"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_sp_14"
+                        android:textColor="@color/font_color_66"
+                        android:text="选择银行："/>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_bank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:background="@drawable/d7_radius_btn_bg"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_marginLeft="@dimen/dp_6"
+                                android:layout_width="23dp"
+                                android:layout_height="23dp"
+                                android:visibility="gone"/>
+
+                            <TextView
+                                android:id="@+id/tv_bank_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/font_sp_14"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:maxLines="1"
+                                android:textColor="@color/font_color_44"
+                                android:text="中国建设银行(5623)"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dp_5"
+                            android:src="@drawable/ic_arrow_down"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_sp_14"
+                        android:textColor="@color/font_color_66"
+                        android:text="银行卡号："/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:orientation="vertical"
+                        android:background="@drawable/d7_radius_btn_bg">
+
+                        <EditText
+                            android:id="@+id/ed_card_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:background="@color/transparent"
+                            android:maxLines="1"
+                            android:text=""
+                            android:inputType="number"
+                            android:textColor="@color/font_color_44"
+                            android:textSize="@dimen/font_sp_13"
+                            android:hint=""/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_sp_14"
+                        android:textColor="@color/font_color_66"
+                        android:text="开户地址："/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:background="@drawable/d7_radius_btn_bg"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_province"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/font_sp_14"
+                                    android:layout_marginLeft="@dimen/dp_5"
+                                    android:maxLines="1"
+                                    android:textColor="@color/font_color_99"
+                                    android:text="湖南省"/>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/dp_5"
+                                android:src="@drawable/ic_arrow_down"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_2"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:background="@drawable/d7_radius_btn_bg"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tv_city"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/font_sp_14"
+                                    android:layout_marginLeft="@dimen/dp_5"
+                                    android:maxLines="1"
+                                    android:textColor="@color/font_color_99"
+                                    android:text="长沙市"/>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/dp_5"
+                                android:src="@drawable/ic_arrow_down"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_sp_14"
+                        android:textColor="@color/font_color_66"
+                        android:text="支行名称："/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:orientation="vertical"
+                        android:background="@drawable/d7_radius_btn_bg">
+
+                        <EditText
+                            android:id="@+id/ed_bank_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:background="@color/transparent"
+                            android:maxLines="1"
+                            android:text=""
+                            android:inputType="number"
+                            android:textColor="@color/font_color_44"
+                            android:textSize="@dimen/font_sp_13"
+                            android:hint=""/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_sp_14"
+                        android:textColor="@color/font_color_66"
+                        android:maxLines="1"
+                        android:text="手机号码："/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:background="@drawable/d7_radius_btn_bg">
+                        <EditText
+                            android:id="@+id/ed_phone_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/dp_8"
+                            android:hint="请输入手机号码"
+                            android:maxLines="1"
+                            android:background="@android:color/transparent"
+                            android:textColorHint="@color/font_color_99"
+                            android:textColor="@color/font_color_66"
+                            android:textSize="@dimen/font_sp_12"
+                            android:inputType="phone"/>
+                        <Button
+                            android:id="@+id/btn_get_certify"
+                            android:layout_width="58dp"
+                            android:layout_height="@dimen/dp_22"
+                            android:layout_marginRight="@dimen/dp_8"
+                            android:background="@drawable/btn_rigester_bg"
+                            android:textColor="@color/bg_color_7698fc"
+                            android:textSize="@dimen/dp_13"
+                            android:text="免费获取"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_help"
+                        android:layout_width="20dp"
+                        android:layout_height="@dimen/dp_16"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_findback_wenti"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_sp_14"
+                        android:textColor="@color/font_color_66"
+                        android:text="验 证 码："/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:orientation="vertical"
+                        android:background="@drawable/d7_radius_btn_bg">
+
+                        <EditText
+                            android:id="@+id/ed_certify_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:background="@color/transparent"
+                            android:maxLines="1"
+                            android:text=""
+                            android:inputType="number"
+                            android:textColor="@color/font_color_44"
+                            android:textSize="@dimen/font_sp_13"
+                            android:hint=""/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:textColor="@color/font_color_71"
+                    android:checked="true"
+                    android:text="开通快捷支付"/>
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_36"
+                    android:background="@drawable/main_2_radius_bg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_sp_15"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:text="确 认"/>
+
+                <TextView
+                    android:id="@+id/tv_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginBottom="@dimen/dp_60"
+                    android:textColor="@color/font_color_99"
+                    android:textSize="@dimen/font_sp_14"
+                    android:text="@string/bang_bank_card_des"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

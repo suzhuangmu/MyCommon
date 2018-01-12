@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_top"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/tv_top"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/main_oval_shape_bg"
+                android:text="3"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="@dimen/font_sp_12"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_sp_14"
+            android:textColor="@color/font_color_66"
+            android:gravity="center"
+            android:text="154****1245"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_sp_14"
+            android:textColor="@color/font_color_66"
+            android:gravity="center"
+            android:text="45251.00元"/>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/line_ea"/>
+</LinearLayout>

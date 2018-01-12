@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/title_view"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_54"
+        android:layout_marginRight="@dimen/dp_54"
+        android:paddingTop="@dimen/dp_30"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_14"
+                android:textColor="@color/font_color_44"
+                android:text="标的投资金额："/>
+
+            <TextView
+                android:id="@+id/tv_total_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_15"
+                android:textColor="@color/main_color"
+                android:text="6888.00"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_15"
+                android:textColor="@color/font_color_44"
+                android:text="  元"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_14"
+                android:textColor="@color/font_color_44"
+                android:text="往期年化率："/>
+
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_15"
+                android:textColor="@color/main_color"
+                android:text="6.88%"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_14"
+                android:textColor="@color/font_color_44"
+                android:text="投资期限："/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_15"
+                android:textColor="@color/main_color"
+                android:text="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_15"
+                android:textColor="@color/font_color_44"
+                android:text="  天"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/line_ea"
+            android:layout_marginTop="@dimen/dp_33"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_28"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_14"
+                android:textColor="@color/font_color_44"
+                android:text="投资人："/>
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_15"
+                android:textColor="@color/font_color_99"
+                android:text="189****9685"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_26"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_14"
+                android:textColor="@color/font_color_44"
+                android:text="体验金账户金额："/>
+
+            <TextView
+                android:id="@+id/tv_tiyan_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_15"
+                android:textColor="@color/main_color"
+                android:text="6888.00"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_15"
+                android:textColor="@color/font_color_44"
+                android:text="  元"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_26"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_14"
+                android:textColor="@color/font_color_44"
+                android:text="起投金额："/>
+
+            <TextView
+                android:id="@+id/tv_qitou_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_15"
+                android:textColor="@color/main_color"
+                android:text="6888.00"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_15"
+                android:textColor="@color/font_color_44"
+                android:text="  元"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:textSize="@dimen/font_sp_13"
+            android:textColor="@color/font_color_66"
+            android:text="@string/new_invest_des"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_33"
+            android:layout_marginTop="@dimen/dp_33"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_sp_13"
+            android:text="立即投资"
+            android:background="@drawable/main_2_radius_bg"/>
+    </LinearLayout>
+</LinearLayout>

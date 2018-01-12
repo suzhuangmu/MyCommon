@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_view"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_18"
+        android:background="@drawable/white_round_bg">
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_8"
+            android:background="@color/transparent"
+            android:maxLength="50"
+            android:textColorHint="@color/font_color_99"
+            android:textSize="@dimen/font_sp_15"
+            android:hint="请输入您的意见进行反馈（限50字）"/>
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_margin="@dimen/dp_4"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/font_sp_15"
+            android:textColor="@color/font_color_f6"
+            android:background="@drawable/main_2_radius_bg"
+            android:text="提 交"/>
+    </RelativeLayout>
+</LinearLayout>

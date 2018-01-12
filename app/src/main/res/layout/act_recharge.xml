@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/title_view"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_22"
+        android:layout_marginLeft="@dimen/dp_36"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_14"
+                android:textColor="@color/font_color_33"
+                android:text="@string/balance"/>
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_15"
+                android:textColor="@color/font_color_fe8625"
+                android:text="0.00元"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginTop="@dimen/dp_28"
+            android:layout_marginRight="@dimen/dp_67"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_14"
+                android:textColor="@color/font_color_33"
+                android:text="我的银行"/>
+            <RelativeLayout
+                android:id="@+id/rl_bank"
+                android:layout_width="185dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_round_shape_bg">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_jianhang"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_sp_15"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:maxLines="1"
+                        android:textColor="@color/font_color_44"
+                        android:text="中国建设银行（5623）"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_jiaobiao"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginTop="@dimen/dp_28"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_14"
+                android:textColor="@color/font_color_33"
+                android:text="充值金额"/>
+
+            <LinearLayout
+                android:layout_width="185dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/d7_radius_btn_bg"
+                    android:gravity="center_vertical">
+                    <EditText
+                        android:id="@+id/ed_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/font_sp_15"
+                        android:background="@color/transparent"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:maxLines="1"
+                        android:textColor="@color/font_color_44"
+                        android:text=""/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:textSize="@dimen/font_sp_13"
+                        android:textColor="@color/font_color_99"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_sp_13"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:maxLines="1"
+                android:textColor="@color/font_color_44"
+                android:text="(免手续费)"/>
+
+        </LinearLayout>
+
+        
+        <Button
+            android:id="@+id/btn_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginTop="@dimen/dp_28"
+            android:layout_marginLeft="61dp"
+            android:layout_marginRight="@dimen/dp_67"
+            android:background="@drawable/main_2_radius_bg"
+            android:textSize="@dimen/font_sp_15"
+            android:textColor="@color/white"
+            android:text="确认充值"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_38"
+        android:layout_marginRight="57dp"
+        android:textColor="@color/font_color_99"
+        android:textSize="@dimen/font_sp_13"
+        android:text="@string/recharge_notice"
+        android:layout_marginBottom="@dimen/dp_80"/>
+</LinearLayout>

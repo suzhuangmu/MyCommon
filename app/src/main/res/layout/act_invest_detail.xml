@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_view_height"
+        android:background="@color/main_color">
+
+        <TextView
+            android:id="@+id/title_name"
+            style="@style/TitleStyle"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""/>
+
+
+        <RelativeLayout
+            android:id="@+id/title_back_button"
+            android:layout_width="@dimen/title_view_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_white_back"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/bt_share"
+            android:layout_width="@dimen/title_view_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_share" />
+
+    </RelativeLayout>
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/rc_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+ <Button
+     android:id="@+id/btn_invest"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/dp_36"
+     android:textColor="@color/white"
+     android:text="立即投资"
+     android:textSize="@dimen/font_sp_15"
+     android:background="@color/main_color"/>
+</LinearLayout>

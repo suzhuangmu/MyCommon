@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_view_height"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/title_single"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_line" />
+
+    <TextView
+        android:id="@+id/title_name"
+        style="@style/TitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+    <RelativeLayout
+        android:id="@+id/title_back_button"
+        android:layout_width="@dimen/title_view_height"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_back"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_right"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+
+        <Button
+            android:id="@+id/bt_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/rl_right"
+        android:scaleType="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/dp_30"
+        android:gravity="center"
+        android:textColor="@color/font_color_44"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/font_sp_13"
+        android:visibility="gone"/>
+</RelativeLayout>

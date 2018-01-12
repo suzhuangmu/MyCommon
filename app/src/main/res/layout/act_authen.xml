@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_view" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_34"
+        android:paddingLeft="@dimen/dp_52"
+        android:paddingRight="@dimen/dp_52"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_5"
+            android:background="@drawable/d7_radius_btn_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/font_color_33"
+                android:textSize="@dimen/font_sp_13"
+                android:gravity="center_vertical"
+                android:text="姓   名"/>
+
+            <com.app.common.commonwidget.EditTextDelView
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:maxLines="1"
+                android:textSize="@dimen/font_sp_13"
+                android:textColorHint="@color/font_color_99"
+                android:hint="请输入您的真实姓名"
+                android:textColor="@color/font_color_33"
+                android:paddingLeft="@dimen/dp_25"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginTop="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_5"
+            android:orientation="horizontal"
+            android:background="@drawable/d7_radius_btn_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/font_color_33"
+                android:textSize="@dimen/font_sp_13"
+                android:gravity="center_vertical"
+                android:text="身份证号"/>
+
+            <com.app.common.commonwidget.EditTextDelView
+                android:id="@+id/ed_certify"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:maxLines="1"
+                android:textSize="@dimen/font_sp_13"
+                android:textColor="@color/font_color_33"
+                android:textColorHint="@color/font_color_99"
+                android:hint="请输入18位身份证号码"
+                android:paddingLeft="@dimen/dp_25"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_17"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我已阅读并同意"
+                android:textSize="@dimen/font_sp_10"
+                android:textColor="@color/font_color_77"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/font_sp_10"
+                android:text="《支付服务协议》"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginTop="@dimen/dp_18"
+            android:background="@drawable/main_2_radius_bg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_sp_14"
+            android:text="@string/confirm"/>
+    </LinearLayout>
+</LinearLayout>

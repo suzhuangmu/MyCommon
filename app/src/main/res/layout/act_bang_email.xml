@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/title_view"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_33"
+        android:paddingLeft="63dp"
+        android:paddingRight="63dp">
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_11"
+            android:paddingBottom="@dimen/dp_11"
+            android:background="@drawable/d7_radius_btn_bg"
+            android:hint="电子邮件"
+            android:textColorHint="@color/font_color_99"
+            android:textColor="@color/font_color_66"
+            android:textSize="@dimen/font_sp_14"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="@dimen/dp_22"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/d7_radius_btn_bg">
+                <EditText
+                    android:id="@+id/ed_certify"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:hint="验证码"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/font_color_99"
+                    android:textColor="@color/font_color_66"
+                    android:textSize="@dimen/font_sp_14"
+                    android:inputType="phone"/>
+                <com.mycommon.su.ui.mine.view.ValidationCode
+                    android:id="@+id/validation_code"
+                    android:layout_width="65dp"
+                    android:layout_height="@dimen/dp_26"
+                    android:layout_marginRight="@dimen/dp_8"
+                    app:CodeTextSize="@dimen/font_sp_15"/>
+            </LinearLayout>
+            
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="@dimen/dp_25"
+            android:background="@drawable/main_2_radius_bg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_sp_15"
+            android:text="提 交"/>
+    </LinearLayout>
+</LinearLayout>

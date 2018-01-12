@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title_view"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_25"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_sp_14"
+                    android:textColor="@color/font_color_66"
+                    android:text="账户余额"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:textSize="@dimen/font_sp_15"
+                    android:textColor="@color/font_color_fe8625"
+                    android:text="5500.00元"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_sp_14"
+                    android:textColor="@color/font_color_66"
+                    android:text="账户余额"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:textSize="@dimen/font_sp_15"
+                    android:textColor="@color/font_color_fe8625"
+                    android:text="5500.00元"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="@dimen/dp_28"
+                android:layout_marginRight="@dimen/dp_67"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_sp_14"
+                    android:textColor="@color/font_color_66"
+                    android:text="提 取 到"/>
+                <RelativeLayout
+                    android:id="@+id/rl_bank"
+                    android:layout_width="185dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/main_round_shape_bg"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_marginLeft="@dimen/dp_6"
+                            android:layout_width="23dp"
+                            android:layout_height="23dp"
+                            android:src="@drawable/ic_jianhang"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_sp_14"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:maxLines="1"
+                            android:textColor="@color/font_color_44"
+                            android:text="中国建设银行(5623)"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_jiaobiao"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="@dimen/dp_28"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_sp_14"
+                    android:textColor="@color/font_color_66"
+                    android:text="提取金额"/>
+                <LinearLayout
+                    android:layout_width="185dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/d7_radius_btn_bg">
+                    <EditText
+                        android:id="@+id/ed_price"
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:maxLines="1"
+                        android:background="@color/transparent"
+                        android:text=""
+                        android:textColor="@color/font_color_44"
+                        android:textSize="@dimen/font_sp_13" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_sp_13"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:maxLines="1"
+                    android:textColor="@color/main_color"
+                    android:text="全部提现"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="@dimen/dp_28"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_sp_14"
+                    android:textColor="@color/font_color_66"
+                    android:text="支付密码"/>
+                <LinearLayout
+                    android:layout_width="185dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/d7_radius_btn_bg">
+                    <EditText
+                        android:id="@+id/ed_password"
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@color/transparent"
+                        android:maxLines="1"
+                        android:text=""
+                        android:inputType="textPassword"
+                        android:textColor="@color/font_color_44"
+                        android:textSize="@dimen/font_sp_13" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_sp_13"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:maxLines="1"
+                    android:textColor="@color/main_color"
+                    android:text="忘记密码"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="@dimen/dp_22"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_sp_14"
+                    android:textColor="@color/font_color_66"
+                    android:maxLines="1"
+                    android:text="手机号码"/>
+                <LinearLayout
+                    android:layout_width="185dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/d7_radius_btn_bg">
+                    <EditText
+                        android:id="@+id/ed_certify"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:hint="请输入手机号码"
+                        android:maxLines="1"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="@color/font_color_99"
+                        android:textColor="@color/font_color_66"
+                        android:textSize="@dimen/font_sp_12"
+                        android:inputType="phone"/>
+                    <Button
+                        android:id="@+id/btn_get_certify"
+                        android:layout_width="58dp"
+                        android:layout_height="@dimen/dp_22"
+                        android:layout_marginRight="@dimen/dp_8"
+                        android:background="@drawable/btn_rigester_bg"
+                        android:textColor="@color/bg_color_7698fc"
+                        android:textSize="@dimen/dp_13"
+                        android:text="免费获取"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_help"
+                    android:layout_width="21dp"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/ic_findback_wenti"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="@dimen/dp_28"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_sp_14"
+                    android:textColor="@color/font_color_66"
+                    android:text="验 证 码"/>
+                <LinearLayout
+                    android:layout_width="185dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/d7_radius_btn_bg">
+                    <EditText
+                        android:id="@+id/ed_certify_number"
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@color/transparent"
+                        android:maxLines="1"
+                        android:text=""
+                        android:inputType="number"
+                        android:textColor="@color/font_color_44"
+                        android:textSize="@dimen/font_sp_13"
+                        android:hint="请输入手机验证码"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="185dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginLeft="@dimen/dp_66"
+                android:background="@drawable/main_2_radius_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_sp_14"
+                android:text="确认提取"/>
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_26"
+                android:layout_marginBottom="@dimen/dp_40"
+                android:layout_marginRight="@dimen/dp_60"
+                android:text="@string/recharge_notice"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
